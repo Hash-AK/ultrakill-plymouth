@@ -3,6 +3,8 @@ A Plymouth theme of Ultrakill's game launching sequence ( _note, for the GRUB me
 
 ![LMDemo](https://github.com/user-attachments/assets/3dd3f0b9-c6e0-4569-91f4-ec1f729d2d3b)  
 
+(_Please also note that this was ran in a VM with a subobtimal resolution, not the 1920x1080 version that I give here, so the screen isn't filled correctly_)  
+
 # Installation
 
 It really depends on your distro's way of updating plymouth theme, here is how to do it on Linux Mint :
