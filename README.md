@@ -1,5 +1,8 @@
 # ultrakill-plymouth
-A Plymouth theme of Ultrakill's game launchign sequence
+A Plymouth theme of Ultrakill's game launching sequence :  
+
+![LMDemo](https://github.com/user-attachments/assets/3dd3f0b9-c6e0-4569-91f4-ec1f729d2d3b)  
+
 
 # Credits
 - **ULTRAKILL by [New Blood Interactive](https://newblood.games), developed by Arsi "Hakita" Patala**  
