@@ -5,6 +5,23 @@ A Plymouth theme of Ultrakill's game launching sequence ( _note, for the GRUB me
 
 # Installation
 
+It really depends on your distro's way of updating plymouth theme, here is how to do it on Linux Mint :
+```bash
+git clone https://github.com/Hash-AK/ultrakill-plymouth
+cd ultrakill-plymouth/LinuxMint/
+sudo cp -r ./HD/ /usr/share/plymouth/themes/ultrakill-plymouth
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth ultrakill-plymouth.plymouth 80
+sudo update-alternatives --config default.plymouth # choose the corret number for the theme in the menu
+sudo update-initramfs -u
+```
+Alternatively, you may need to delay your boot if you want to see the full animation. The only way I found yet on Linux mint was to delay lightdm.service with this : 
+```bash
+sudo systemctl edit lightdm.service
+# under [Service], add ExecStartPre=/usr/bin/sleep 6.5 (change the number until the boot is more or less correct)
+sudo systemctl daemon-reload
+sudo systemctl restart lightdm.service
+reboot
+```
 
 
 # Credits
