@@ -14,7 +14,7 @@ sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth d
 sudo update-alternatives --config default.plymouth # choose the corret number for the theme in the menu
 sudo update-initramfs -u
 ```
-Alternatively, you may need to delay your boot if you want to see the full animation. The only way I found yet on Linux mint was to delay lightdm.service with this : 
+Moreover, you may need to delay your boot if you want to see the full animation. The only way I found yet on Linux mint was to delay lightdm.service with this : 
 ```bash
 sudo systemctl edit lightdm.service
 # under [Service], add ExecStartPre=/usr/bin/sleep 6.5 (change the number until the boot is more or less correct)
