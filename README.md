@@ -1,7 +1,10 @@
 # ultrakill-plymouth
-A Plymouth theme of Ultrakill's game launching sequence :  
+A Plymouth theme of Ultrakill's game launching sequence ( _note, for the GRUB menu theme, go to [this project](https://github.com/YouStones/ultrakill-grub-theme)_ ) :  
 
 ![LMDemo](https://github.com/user-attachments/assets/3dd3f0b9-c6e0-4569-91f4-ec1f729d2d3b)  
+
+# Installation
+
 
 
 # Credits
