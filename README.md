@@ -8,6 +8,7 @@ A Plymouth theme of Ultrakill's game launching sequence ( _note, for the GRUB me
 # Installation
 
 It really depends on your distro's way of updating plymouth theme, here is how to do it on Linux Mint :
+## Linux Mint
 ```bash
 git clone https://github.com/Hash-AK/ultrakill-plymouth
 cd ultrakill-plymouth/LinuxMint/
@@ -24,7 +25,19 @@ sudo systemctl daemon-reload
 sudo systemctl restart lightdm.service
 reboot
 ```
-
+## Arch
+```bash
+git clone https://github.com/Hash-AK/ultrakill-plymouth
+cd ultrakill-plymouth/Arch/
+sudo cp -r ./HD/ /usr/share/plymouth/themes/ultrakill-plymouth-arch
+sudo plymouth-set-default-theme ultrakill-plymouth-arch -R
+```
+As for Mint, you may need to delay the boot, this tiem editing plymouth's own service :
+```bash
+sudo systemctl edit plymouth-quit.service
+# Under [Service], add
+ExecStartPre=/usr/bin/sleep 13 # adjust the time accordingly
+```
 
 # Credits
 - **ULTRAKILL by [New Blood Interactive](https://newblood.games), developed by Arsi "Hakita" Patala**  
