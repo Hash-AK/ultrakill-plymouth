@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=ultrakill-plymouth-arch
+Description=ultrakill
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/ultrakill-plymouth-arch/
+ScriptFile=/usr/share/plymouth/themes/ultrakill-plymouth-arch/animated-boot.script
