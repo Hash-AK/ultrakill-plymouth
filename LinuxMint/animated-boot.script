@@ -1,0 +1,40 @@
+# Nice colour on top of the screen fading to
+Window.SetBackgroundTopColor (0.0, 0.00, 0.0);
+
+# an equally nice colour on the bottom
+Window.SetBackgroundBottomColor (0.0, 0.00, 0.0);
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+screen_ratio = screen_height / screen_width;
+
+# Image animation loop
+
+for (i = 0; i < 199; i++)
+{
+  flyingman_image[i] = Image("frame-" + i + ".png");
+  image_ratio = flyingman_image[i].GetHeight() / flyingman_image[i].GetWidth();
+
+if (screen_ratio > image_ratio)
+{
+  scale_factor = screen_height / flyingman_image[i].GetHeight();
+}
+else
+{
+  scale_factor = screen_width / flyingman_image[i].GetWidth();
+}
+flyingman_image[i]=flyingman_image[i].Scale(flyingman_image[i].GetWidth() * scale_factor, flyingman_image[i].GetHeight() * scale_factor);
+# Thanks to https://brej.org/blog/?p=197 for the scaling code
+}
+flyingman_sprite = Sprite();
+flyingman_sprite.SetX(screen_width / 2 - flyingman_image[1].GetWidth() / 2); # Place in the centre
+flyingman_sprite.SetY(screen_height / 2 - flyingman_image[1].GetHeight() / 2);
+
+progress = 1;
+
+fun refresh_callback ()
+{
+  flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 3) % 199]);
+  progress++;
+}
+
+Plymouth.SetRefreshFunction (refresh_callback);

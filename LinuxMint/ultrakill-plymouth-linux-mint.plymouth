@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=ultrakill-plymouth-linux-mint
+Description=ultrakill
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/ultrakill-plymouth-linux-mint/
+ScriptFile=/usr/share/plymouth/themes/ultrakill-plymouth-linux-mint/animated-boot.script
