@@ -52,3 +52,12 @@ Then reload the service:
 
 - **Neon Icons by [peteyyz/refind-neon](https://github.com/peteyyz/refind-neon)**  
   Neon icons adapted and modified from the rEFInd neon theme. Original project by peteyyz.
+  
+- **animated-boot.script** was based on: [dreamsmasher/Arch-Wireframe-Plymouth-Theme](https://github.com/dreamsmasher/Arch-Wireframe-Plymouth-Theme),
+  Original animation framework based on: [jcklpe/Plymouth-Animated-Boot-Screen-Creator](https://github.com/jcklpe/Plymouth-Animated-Boot-Screen-Creator)
+
+  The animation scaling code was adapted from the technique described by [brej.org](https://brej.org/blog/?p=197).
+  This version has been substantially modified for the ULTRAKILL Plymouth theme,
+  including the animation frames, frame handling, and automatic display scaling.
+
+  The original Arch-Wireframe project is licensed under the GNU General Public License v3.0.
