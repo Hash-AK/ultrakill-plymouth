@@ -1,9 +1,13 @@
 # ultrakill-plymouth
-A Plymouth theme of Ultrakill's game launching sequence ( _note, for the GRUB menu theme, go to [this project](https://github.com/YouStones/ultrakill-grub-theme)_ ) :  
+A Plymouth (boot) theme of Ultrakill's game launching sequence.
 The animation frames are provided at 1920×1080 and automatically scaled to fit the display while preserving their original aspect ratio.
-![LMDemo](https://github.com/user-attachments/assets/3dd3f0b9-c6e0-4569-91f4-ec1f729d2d3b)  
+  
+https://github.com/user-attachments/assets/c499c7df-4d3c-4a0f-a010-524798b43ded  
 
-(_Please also note that this was ran in a VM with a subobtimal resolution, not the 1920x1080 version that I give here, so the screen isn't filled correctly_)  
+# Status
+Currently the only distro logos available are Linux Mint's and Arch. I may or may not add more.
+If you want to add your own, just replace frame-149.png to frame-194.png. 
+
 
 # Installation
 
@@ -41,12 +45,10 @@ ExecStartPre=/usr/bin/sleep 13 # adjust the time accordingly
 Then reload the service:
 ```sudo systemctl daemon-reload```
 
+
 # Credits
 - **ULTRAKILL by [New Blood Interactive](https://newblood.games), developed by Arsi "Hakita" Patala**  
   Original game that inspired this Plymouth theme.
-
-- **ULTRAKILL GRUB Theme by [YouStones](https://github.com/YouStones/ultrakill-grub-theme)**  
-  Awesome GRUB theme, seen in the first second of my recording
 
 - **Neon Icons by [peteyyz/refind-neon](https://github.com/peteyyz/refind-neon)**  
   Neon icons adapted and modified from the rEFInd neon theme. Original project by peteyyz.
