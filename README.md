@@ -1,6 +1,10 @@
 # ultrakill-plymouth
 A Plymouth (boot) theme of Ultrakill's game launching sequence.
-The animation frames are provided at 1920×1080 and automatically scaled to fit the display while preserving their original aspect ratio.
+The animation frames are provided at 1920×1080 and automatically scaled to fit the display while preserving their original aspect ratio.  
+
+**IMPORTANT**:  
+Please note that this themes does not have a password prompt function, so if your drive uses encryption the password prompt won't appear.  
+
   
 https://github.com/user-attachments/assets/c499c7df-4d3c-4a0f-a010-524798b43ded  
 
